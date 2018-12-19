@@ -3,3 +3,4 @@ default-drop.sql
 test.mv.db 
 test.trace.db
 target/
+.idea/

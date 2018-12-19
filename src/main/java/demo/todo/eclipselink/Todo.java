@@ -21,6 +21,7 @@ package demo.todo.eclipselink;
  */
 
 import act.Act;
+import act.cli.Command;
 import act.db.DbBind;
 import act.db.jpa.JPADao;
 import act.db.sql.tx.Transactional;
@@ -70,7 +71,7 @@ public class Todo {
     }
 
     @PostAction("/list")
-    @Transactional
+    @Command("add")
     public void post(String desc) {
         TodoItem item = new TodoItem(desc);
         dao.save(item);
