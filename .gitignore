@@ -16,3 +16,5 @@ deploy
 **/.act*
 git.log
 *.log
+*.db
+*.sql
